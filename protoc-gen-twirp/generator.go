@@ -31,9 +31,9 @@ import (
 	plugin "google.golang.org/protobuf/types/pluginpb"
 
 	"github.com/pkg/errors"
-	"github.com/twitchtv/twirp/internal/gen"
-	"github.com/twitchtv/twirp/internal/gen/stringutils"
-	"github.com/twitchtv/twirp/internal/gen/typemap"
+	"github.com/wexder/twirp/internal/gen"
+	"github.com/wexder/twirp/internal/gen/stringutils"
+	"github.com/wexder/twirp/internal/gen/typemap"
 )
 
 type twirp struct {

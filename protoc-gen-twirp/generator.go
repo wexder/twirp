@@ -216,6 +216,7 @@ func deduceGenPkgName(genFiles []*descriptor.FileDescriptorProto) (string, error
 
 func (t *twirp) generate(file *descriptor.FileDescriptorProto) *plugin.CodeGeneratorResponse_File {
 	resp := new(plugin.CodeGeneratorResponse_File)
+	resp.SupportedFeatures = proto.Uint64(uint64(plugin.CodeGeneratorResponse_FEATURE_PROTO3_OPTIONAL))
 	if len(file.Service) == 0 {
 		return nil
 	}
